@@ -1,0 +1,17 @@
+[package]
+name = "bioblitz-checklist"
+version = "0.1.0"
+edition = "2024"
+description = "Turn iNaturalist observation exports into a printable, taxonomically grouped bioblitz species checklist"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SignalForHumanity/bioblitz-checklist"
+readme = "README.md"
+keywords = ["inaturalist", "bioblitz", "biodiversity", "checklist", "citizen-science"]
+categories = ["command-line-utilities", "science"]
+
+[profile.release]
+strip = true
+lto = true
+
+[dependencies]
+csv = "1.4.0"
